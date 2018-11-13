@@ -1,0 +1,17 @@
+""" command parser """
+def cmd_parser(line):
+    if line.strip() == 'g':
+        return 'g', None, None
+    fmt = re.compile(r"([acr])\s\"([a-z\sA-Z]+)\"(.*)")
+    match = fmt.match(line)
+    if match == None:
+        raise ParseException("wrong command format.")
+    else:
+        if match.group(1) == 'r':
+            return match.group(1), match.group(2), None
+        else:
+            if not re.match(r"(\([-\d]\d*\s*,\s*[-\d]\d*\)\s*)+", match.group(3).strip()):
+                raise ParseException("wrong command format.")
+            else:
+                # action, streetname, coors
+                return match.group(1), match.group(2), match.group(3).strip()

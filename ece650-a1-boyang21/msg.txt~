@@ -1,0 +1,13 @@
+Version 1.1, fix bugs, clean code
+
+Command parser didn't match the whole string, so some errors such as '['
+in coords part, escaped. Add ^ and $ to fix. 
+
+Clean the code on intersect module and add many test cases. 
+
+Check existence before adding new edges. 
+
+Check exception in the main function for all database operations.
+
+Add output.txt (output of input.txt) whose correctness been manually 
+verified

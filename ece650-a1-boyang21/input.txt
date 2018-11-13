@@ -1,0 +1,26 @@
+a "Weber Street" (2, -1) (2,2)(5,5) (5,6) (3,8) 
+a "King Street S" (4, 2)(4, 8)
+g
+a "Davenport Road" (1, 4)(5,8)
+c "Weber Street" (2, 1) (2, 2)
+g
+r "King Street S"
+r "King Street S"
+g
+a "Weber Street" (2, -1) (2,2)(5,5) (5,6) (3,8) 
+a "King Street S" (4, 2)(4, 8)
+r "King Street S"
+c "King Street S" (2, 1) (2, 2)
+g
+r "Weber Street"
+r "Davenport Road"
+g
+a "Westcourt" (2, -1) (2, 2) (5, 5) (5, 6) (3,8)
+a "University Ave W" (4, 2) (4, 8)
+c "Westcourt" (2, -1) (2, 2) (5, 2) (5, 6) (3,6)
+c "University Ave W" (5, 2) (5, 8) (-10, 10)
+g
+c "University Ave W" (5, 2) (5, 8) (3, 10) (3, 2) (-10, 2)]
+g
+c  "University Ave W" (5, 2) (5, 8) (3, 10) (3, 2) (-10, 2)
+g
